@@ -27,20 +27,22 @@ Security-Compliance-Checker/
 ├── logs/
 └── README.md
 
+
 ## ⚡ How to Run
 
 1. Open terminal (or WSL on Windows).  
 2. Go to the scripts folder:
-   
+   ```bash
    cd /mnt/d/Projects/Security-Compliance-Checker/scripts
 
 3. Make scripts executable
-      
-      chmod +x *.sh
+   ```bash
+   chmod +x *.sh
+
 
 4. Run the audit:
-
-      ./audit.sh
+   ```bash
+    ./audit.sh
 
 5. Check logs folder for output.
 
