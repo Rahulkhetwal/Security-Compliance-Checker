@@ -19,13 +19,16 @@ An automated shell script suite to audit Linux systems for misconfigurations, fi
 ## 📂 Folder Structure
 
 Security-Compliance-Checker/
-├── scripts/
-│ ├── audit.sh
-│ ├── check_firewall.sh
-│ ├── check_ssh.sh
-│ └── check_users.sh
-├── logs/
-└── README.md
+│── scripts/
+│   ├── audit.sh
+│   ├── check_users.sh
+│   ├── check_firewall.sh
+│   └── check_ssh.sh
+│── logs/
+│── README.md
+│── configs/
+│── docs/
+
 
 
 ## ⚡ How to Run
@@ -33,18 +36,22 @@ Security-Compliance-Checker/
 1. Open terminal (or WSL on Windows).  
 2. Go to the scripts folder:
    ```bash
-   cd /mnt/d/Projects/Security-Compliance-Checker/scripts
+   cd /mnt/d/Projects/Security-Compliance-Checker
 
 3. Make scripts executable
    ```bash
-   chmod +x *.sh
+   chmod +x scripts/*.sh
 
 
 4. Run the audit:
    ```bash
-    ./audit.sh
+    bash scripts/audit.sh
 
 5. Check logs folder for output.
+   ```bash
+   logs/users_report.log  
+   logs/firewall_report.log  
+   logs/ssh_report.log
 
   📈 Impact / Results
 
